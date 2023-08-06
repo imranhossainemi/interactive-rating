@@ -17,22 +17,43 @@
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      font-size: 15px;
     }
 
-    .body {
+    h3 {
+      color: hsl(0,0%,100%);
+      font-weight: 700;
+    }
+
+    p,
+    li {
+      color: hsl(217, 12%, 63%);
+      font-weight: 400;
+    }
+
+    body {
       max-width: 1440px;
       height: 800px;
       margin: 0 auto;
+      background-color: hsl(216, 12%, 8%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .main {
-      max-width: 1440px;
-      height: 100vh;
+      width: 350px;
+      height: 400px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: hsl(216, 12%, 8%);
+      margin: 0 auto;
+      background-color: hsl(213, 19%, 18%);
+      padding: 20px;
+      position: relative;
+      border-radius: 30px;
     }
 
   </style>
@@ -41,30 +62,28 @@
 <section class="main">
   <!-- Rating state start -->
   <div class="rating">
-    <img src="" alt="">
-    <h1>How did we do?</h1>
-    <p>Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!</p>
-    <ul>
-      <li>1</li>
-      <li>2 </li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
+    <img src="images/icon-star.svg" alt="star icon">
+    <h3>How did we do?</h3>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+    </p>
+    <ul class="rate-list">
+      <li class="rate-item">1</li>
+      <li class="rate-item">2 </li>
+      <li class="rate-item">3</li>
+      <li class="rate-item">4</li>
+      <li class="rate-item">5</li>
     </ul>
-    <input type="submit" name="Submit">
+    <button type="submit">Submit</button>
   </div>
   <!-- Rating state end -->
-
   <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+  <div class="thank">
+    <img src="images/illustration-thank-you.svg" alt="thank you image">
+    <p>You selected <!-- Add rating here --> out of 5</p>
+    <h3>Thank you!</h3>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+  </div>
   <!-- Thank you state end -->
 </section>
   
